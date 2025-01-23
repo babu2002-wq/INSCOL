@@ -71,16 +71,16 @@ public class SignInTest extends BaseClass {
 		String presentUrl=driver.getCurrentUrl();
 		sign.forgotPassword();
 		String newUrl=driver.getCurrentUrl();
-		Assert.assertNotEquals("URLs are the same!", presentUrl, newUrl);
+		Assert.assertNotEquals( presentUrl, newUrl);
 	}
 	
 	@Test(priority=12)
 	public void register() {
 		SignIn sign=new SignIn(driver);
 		String presentUrl=driver.getCurrentUrl();
-		sign.passwordTest();
+		sign.createAccount();
 		String newUrl=driver.getCurrentUrl();
-		Assert.assertNotEquals("URLs are the same!", presentUrl, newUrl);
+		Assert.assertNotEquals(presentUrl, newUrl);
 		
 	}
 	
@@ -93,13 +93,12 @@ public class SignInTest extends BaseClass {
 	@Test(priority=10)
 	public void passwordToggleTest() {
 		SignIn sign=new SignIn(driver);
-		System.out.println(sign.getPassword().getAttribute("type").getClass().getSimpleName());
-		Assert.assertEquals("Password field should be hidden", "Password field should be hidden", sign.getPassword().getAttribute("type"));
+		Assert.assertEquals(sign.getPassword().getAttribute("type"), "password" );
 		sign.passwordTest();
-		System.out.println(sign.getPassword().getAttribute("type"));
-		Assert.assertEquals("Password should be visible", "text", sign.getPassword().getAttribute("type"));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		Assert.assertEquals(sign.getPassword().getAttribute("type"), "text");
 		sign.passwordTest();
-		Assert.assertEquals("Password field should be hidden", "password", sign.getPassword().getAttribute("type"));
+		Assert.assertEquals(sign.getPassword().getAttribute("type"), "password" );
 	}
 	
 	@Test(priority=14)

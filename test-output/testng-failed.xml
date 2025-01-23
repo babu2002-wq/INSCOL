@@ -9,7 +9,7 @@
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="passwordToggleTest"/>
+          <include name="IsForgot"/>
         </methods>
       </class> <!-- testcases.SignInTest -->
     </classes>
