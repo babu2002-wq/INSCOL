@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="paracheck">
+	<parameter name="os" value="windows"/>
+	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testcases.SignInTest"/>
+    </classes>
+  </test> <!-- paracheck -->
+</suite> <!-- Suite -->
