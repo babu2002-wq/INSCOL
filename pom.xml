@@ -4,11 +4,11 @@
   <artifactId>INSCOL</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-  	<dependency>
-  		<groupId>Seleniumwebdriver</groupId>
-  		<artifactId>Seleniumwebdriver</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.21.0</version>
+</dependency>
   	
   	<dependency>
     <groupId>org.apache.poi</groupId>
