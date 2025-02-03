@@ -31,4 +31,11 @@ echo "Deploying code"
 }
 }
 }
+post{
+always{
+echo 'Generating TestNG Report'
+bat 'start target\\surefire-reports\\index.html'
+}
+}
+
 }
