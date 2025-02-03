@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-23T12:32:48 IST" name="Suite" finished-at="2025-01-23T12:33:01 IST" duration-ms="13585">
+  <suite started-at="2025-02-03T10:53:01 IST" name="Suite" finished-at="2025-02-03T10:53:13 IST" duration-ms="11882">
     <groups>
     </groups>
-    <test started-at="2025-01-23T12:32:48 IST" name="paracheck" finished-at="2025-01-23T12:33:01 IST" duration-ms="13585">
+    <test started-at="2025-02-03T10:53:01 IST" name="paracheck" finished-at="2025-02-03T10:53:13 IST" duration-ms="11882">
       <class name="testcases.SignInTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:32:48 IST" name="setup" finished-at="2025-01-23T12:32:56 IST" duration-ms="8403" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:01 IST" name="setup" finished-at="2025-02-03T10:53:10 IST" duration-ms="8805" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,31 +23,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ValidateUrl()[pri:1, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:32:56 IST" name="ValidateUrl" finished-at="2025-01-23T12:32:56 IST" duration-ms="422" status="PASS">
+        <test-method signature="ValidateUrl()[pri:1, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:10 IST" name="ValidateUrl" finished-at="2025-02-03T10:53:10 IST" duration-ms="266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateUrl -->
-        <test-method signature="IsLogoDisplayed()[pri:2, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:32:57 IST" name="IsLogoDisplayed" finished-at="2025-01-23T12:32:57 IST" duration-ms="115" status="PASS">
+        <test-method signature="IsLogoDisplayed()[pri:2, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:11 IST" name="IsLogoDisplayed" finished-at="2025-02-03T10:53:11 IST" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IsLogoDisplayed -->
-        <test-method signature="IsWelcomeDisplayed()[pri:5, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:32:57 IST" name="IsWelcomeDisplayed" finished-at="2025-01-23T12:32:57 IST" duration-ms="205" status="PASS">
+        <test-method signature="IsWelcomeDisplayed()[pri:5, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:11 IST" name="IsWelcomeDisplayed" finished-at="2025-02-03T10:53:11 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IsWelcomeDisplayed -->
-        <test-method signature="IsrememberDisplayed()[pri:6, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:32:57 IST" name="IsrememberDisplayed" finished-at="2025-01-23T12:32:57 IST" duration-ms="94" status="PASS">
+        <test-method signature="IsrememberDisplayed()[pri:6, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:11 IST" name="IsrememberDisplayed" finished-at="2025-02-03T10:53:11 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IsrememberDisplayed -->
-        <test-method signature="SignInDisplayed()[pri:7, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:32:57 IST" name="SignInDisplayed" finished-at="2025-01-23T12:32:57 IST" duration-ms="60" status="PASS">
+        <test-method signature="SignInDisplayed()[pri:7, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:11 IST" name="SignInDisplayed" finished-at="2025-02-03T10:53:11 IST" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignInDisplayed -->
-        <test-method signature="rememberClick()[pri:8, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:32:57 IST" name="rememberClick" finished-at="2025-01-23T12:32:57 IST" duration-ms="222" status="PASS">
+        <test-method signature="rememberClick()[pri:8, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:11 IST" name="rememberClick" finished-at="2025-02-03T10:53:11 IST" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rememberClick -->
-        <test-method signature="IsForgot()[pri:9, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:32:58 IST" name="IsForgot" finished-at="2025-01-23T12:32:58 IST" duration-ms="348" status="FAIL">
+        <test-method signature="IsForgot()[pri:9, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:11 IST" name="IsForgot" finished-at="2025-02-03T10:53:11 IST" duration-ms="180" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[did not expect [https://erpindia.inscol.com/auth/sign-in] but found [https://erpindia.inscol.com/auth/sign-in]]]>
@@ -92,27 +92,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IsForgot -->
-        <test-method signature="enterusername()[pri:10, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:32:58 IST" name="enterusername" finished-at="2025-01-23T12:32:58 IST" duration-ms="481" status="PASS">
+        <test-method signature="enterusername()[pri:10, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:11 IST" name="enterusername" finished-at="2025-02-03T10:53:11 IST" duration-ms="337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterusername -->
-        <test-method signature="passwordToggleTest()[pri:10, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:32:58 IST" name="passwordToggleTest" finished-at="2025-01-23T12:32:59 IST" duration-ms="677" status="PASS">
+        <test-method signature="passwordToggleTest()[pri:10, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:11 IST" name="passwordToggleTest" finished-at="2025-02-03T10:53:12 IST" duration-ms="449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordToggleTest -->
-        <test-method signature="enterpassword()[pri:11, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:32:59 IST" name="enterpassword" finished-at="2025-01-23T12:32:59 IST" duration-ms="327" status="PASS">
+        <test-method signature="enterpassword()[pri:11, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:12 IST" name="enterpassword" finished-at="2025-02-03T10:53:12 IST" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterpassword -->
-        <test-method signature="register()[pri:12, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:32:59 IST" name="register" finished-at="2025-01-23T12:33:00 IST" duration-ms="412" status="PASS">
+        <test-method signature="register()[pri:12, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:12 IST" name="register" finished-at="2025-02-03T10:53:12 IST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method signature="IsSignClicked()[pri:14, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:33:00 IST" name="IsSignClicked" finished-at="2025-01-23T12:33:00 IST" duration-ms="532" status="PASS">
+        <test-method signature="IsSignClicked()[pri:14, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:12 IST" name="IsSignClicked" finished-at="2025-02-03T10:53:13 IST" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IsSignClicked -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.SignInTest@18317edc]" started-at="2025-01-23T12:33:00 IST" name="teardown" finished-at="2025-01-23T12:33:01 IST" duration-ms="714" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.SignInTest@4e0ae11f]" started-at="2025-02-03T10:53:13 IST" name="teardown" finished-at="2025-02-03T10:53:13 IST" duration-ms="379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -298,6 +298,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testcases.TestReportListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;paracheck&quot;&gt;
     &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
@@ -346,56 +349,56 @@ data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'passwordToggleTest')
 data.setCell(0, 2, 'testcases.SignInTest')
-data.setCell(0, 3, 677);
+data.setCell(0, 3, 449);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'IsSignClicked')
+data.setCell(1, 1, 'enterusername')
 data.setCell(1, 2, 'testcases.SignInTest')
-data.setCell(1, 3, 532);
+data.setCell(1, 3, 337);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'enterusername')
+data.setCell(2, 1, 'IsSignClicked')
 data.setCell(2, 2, 'testcases.SignInTest')
-data.setCell(2, 3, 481);
+data.setCell(2, 3, 278);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'ValidateUrl')
 data.setCell(3, 2, 'testcases.SignInTest')
-data.setCell(3, 3, 422);
+data.setCell(3, 3, 266);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'register')
 data.setCell(4, 2, 'testcases.SignInTest')
-data.setCell(4, 3, 412);
+data.setCell(4, 3, 226);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'IsForgot')
 data.setCell(5, 2, 'testcases.SignInTest')
-data.setCell(5, 3, 348);
+data.setCell(5, 3, 180);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'enterpassword')
 data.setCell(6, 2, 'testcases.SignInTest')
-data.setCell(6, 3, 327);
+data.setCell(6, 3, 177);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'rememberClick')
 data.setCell(7, 2, 'testcases.SignInTest')
-data.setCell(7, 3, 222);
+data.setCell(7, 3, 129);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'IsWelcomeDisplayed')
+data.setCell(8, 1, 'IsLogoDisplayed')
 data.setCell(8, 2, 'testcases.SignInTest')
-data.setCell(8, 3, 205);
+data.setCell(8, 3, 98);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'IsLogoDisplayed')
+data.setCell(9, 1, 'IsWelcomeDisplayed')
 data.setCell(9, 2, 'testcases.SignInTest')
-data.setCell(9, 3, 115);
+data.setCell(9, 3, 82);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'IsrememberDisplayed')
 data.setCell(10, 2, 'testcases.SignInTest')
-data.setCell(10, 3, 94);
+data.setCell(10, 3, 63);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'SignInDisplayed')
 data.setCell(11, 2, 'testcases.SignInTest')
-data.setCell(11, 3, 60);
+data.setCell(11, 3, 41);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -428,57 +431,57 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ValidateUrl</span>
-                <span class="method-start">8433 ms</span>
+                <span class="method-start">8830 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">IsLogoDisplayed</span>
-                <span class="method-start">9207 ms</span>
+                <span class="method-start">9300 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">IsWelcomeDisplayed</span>
-                <span class="method-start">9334 ms</span>
+                <span class="method-start">9404 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">IsrememberDisplayed</span>
-                <span class="method-start">9550 ms</span>
+                <span class="method-start">9492 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SignInDisplayed</span>
-                <span class="method-start">9651 ms</span>
+                <span class="method-start">9560 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">rememberClick</span>
-                <span class="method-start">9718 ms</span>
+                <span class="method-start">9606 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">IsForgot</span>
-                <span class="method-start">9961 ms</span>
+                <span class="method-start">9745 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterusername</span>
-                <span class="method-start">10325 ms</span>
+                <span class="method-start">9942 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passwordToggleTest</span>
-                <span class="method-start">10823 ms</span>
+                <span class="method-start">10288 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterpassword</span>
-                <span class="method-start">11515 ms</span>
+                <span class="method-start">10745 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">register</span>
-                <span class="method-start">11849 ms</span>
+                <span class="method-start">10925 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">IsSignClicked</span>
-                <span class="method-start">12276 ms</span>
+                <span class="method-start">11157 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">12816 ms</span>
+                <span class="method-start">11445 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
