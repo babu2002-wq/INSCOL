@@ -5,18 +5,7 @@
     <classes>
       <class name="testcases.SignInTest">
         <methods>
-          <include name="enterpassword"/>
-          <include name="IsWelcomeDisplayed"/>
-          <include name="ValidateUrl"/>
-          <include name="IsSignClicked"/>
-          <include name="SignInDisplayed"/>
-          <include name="passwordToggleTest"/>
-          <include name="register"/>
           <include name="teardown"/>
-          <include name="IsLogoDisplayed"/>
-          <include name="IsrememberDisplayed"/>
-          <include name="rememberClick"/>
-          <include name="enterusername"/>
           <include name="setup"/>
           <include name="IsForgot"/>
         </methods>

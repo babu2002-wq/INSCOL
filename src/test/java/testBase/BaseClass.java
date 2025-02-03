@@ -31,16 +31,17 @@ public class BaseClass {
 public static WebDriver driver;
 
       @BeforeClass
-      @Parameters({"os","browser"})
-      public void setup(String os,String bro) throws IOException {
-    	  
+      //@Parameters({"os","browser"})
+      public void setup() throws IOException {
+    	  /*
     	  switch(bro.toLowerCase()) {
     	  case "chrome": driver=new ChromeDriver();break;
     	  case "edge":driver=new EdgeDriver();break;
     	  case "firefox":driver=new FirefoxDriver();break;
     	  default:System.out.println("Invalid browser");return;
     	  }
-    	  
+    	  */
+    	  driver=new ChromeDriver();
     	  driver.manage().deleteAllCookies();
     	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     	  driver.get("https://erpindia.inscol.com/auth/sign-in");
