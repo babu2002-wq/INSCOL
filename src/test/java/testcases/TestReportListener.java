@@ -21,4 +21,10 @@ public class TestReportListener implements IExecutionListener {
             e.printStackTrace();
         }
     }
+
+	@Override
+	public void onExecutionStart() {
+		// TODO Auto-generated method stub
+		
+	}
 }

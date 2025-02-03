@@ -4,11 +4,11 @@
   <artifactId>INSCOL</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-  	<dependency>
-  		<groupId>Seleniumwebdriver</groupId>
-  		<artifactId>Seleniumwebdriver</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.21.0</version>
+</dependency>
   	
   	<dependency>
     <groupId>org.apache.poi</groupId>
@@ -91,12 +91,7 @@
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.10.2</version>
-    <scope>test</scope>
-</dependency>
+
 
   </dependencies>
 </project>
