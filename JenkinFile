@@ -14,7 +14,7 @@ stage('Test'){
 steps
 {
 echo "Testing code"
-bat "mvn test"
+bat "mvn test -DsuiteXmlFile=testng.xml"
 }
 }
 stage('Compile'){

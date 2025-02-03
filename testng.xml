@@ -6,8 +6,7 @@
         <listener class-name="testcases.TestReportListener"/>
     </listeners>
   <test name="paracheck">
-	<parameter name="os" value="windows"/>
-	<parameter name="browser" value="chrome"/>
+	
     <classes>
       <class name="testcases.SignInTest"/>
     </classes>

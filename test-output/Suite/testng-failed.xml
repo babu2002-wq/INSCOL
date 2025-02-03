@@ -5,8 +5,6 @@
     <listener class-name="testcases.TestReportListener"/>
   </listeners>
   <test thread-count="5" name="paracheck(failed)">
-    <parameter name="os" value="windows"/>
-    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="testcases.SignInTest">
         <methods>
