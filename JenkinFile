@@ -10,13 +10,7 @@ bat "mvn -version"
 bat "mvn clean"
 }
 }
-stage('Test'){
-steps
-{
-echo "Testing code"
-bat "mvn test -DsuiteXmlFile=testng.xml"
-}
-}
+
 stage('Compile'){
 steps
 {
@@ -24,6 +18,19 @@ echo "Compile code"
 bat "mvn compile"
 }
 }
+
+
+stage('Test'){
+steps
+{
+echo "Testing code"
+bat "mvn test -DsuiteXmlFile=testng.xml"
+bat 'start target\\surefire-reports\\index.html'
+}
+}
+
+
+
 stage('Deploy'){
 steps
 {
@@ -31,11 +38,12 @@ echo "Deploying code"
 }
 }
 }
-post{
-always{
-echo 'Generating TestNG Report'
-bat 'start target\\surefire-reports\\index.html'
-}
-}
 
+post {
+    always {
+        echo "Archiving Test Results"
+        junit 'target/surefire-reports/*.xml'
+        archiveArtifacts artifacts: 'target/surefire-reports/**/*', fingerprint: true
+    }
+}
 }
