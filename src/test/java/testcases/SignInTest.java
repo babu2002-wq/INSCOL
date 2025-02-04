@@ -71,7 +71,7 @@ public class SignInTest extends BaseClass {
 		String presentUrl=driver.getCurrentUrl();
 		sign.forgotPassword();
 		String newUrl=driver.getCurrentUrl();
-		Assert.assertEquals( presentUrl, newUrl);
+		Assert.assertNotEquals( presentUrl, newUrl);
 	}
 	
 	@Test(priority=12)
