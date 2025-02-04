@@ -25,7 +25,6 @@ steps
 {
 echo "Testing code"
 bat "mvn test -DsuiteXmlFile=testng.xml"
-bat 'start target\\surefire-reports\\index.html'
 }
 }
 
