@@ -1,48 +1,17 @@
-pipeline{
-agent any
-stages
-{
-stage('Build'){
-steps
-{
-echo "Building code"
-bat "mvn -version"
-bat "mvn clean"
-}
-}
+pipeline {
+    agent any
 
-stage('Compile'){
-steps
-{
-echo "Compile code"
-bat "mvn compile"
-}
-}
+    stages {
+        stage('Build') {
+            steps {
+                sh "docker build -t java-automation ."
+            }
+        }
 
-
-stage('Test'){
-steps
-{
-echo "Testing code"
-bat "mvn test -DsuiteXmlFile=testng.xml"
-}
-}
-
-
-
-stage('Deploy'){
-steps
-{
-echo "Deploying code"
-}
-}
-}
-
-post {
-    always {
-        echo "Archiving Test Results"
-        junit 'target/surefire-reports/*.xml'
-        archiveArtifacts artifacts: 'target/surefire-reports/**/*', fingerprint: true
+        stage('Test') {
+            steps {
+                sh "docker run --rm java-automation"
+            }
+        }
     }
-}
 }
